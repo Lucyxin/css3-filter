@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css3 滤镜</title>
+<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+<link type="text/css" rel="stylesheet" href="blur.css">
+</head>
+
+<body align="center">
+<div>
+	<image id="blur-image" src="1.jpg">
+	<image id="blur-image2" src="1.jpg">
+</div>
+<div style="text-align:center;margin-top:50px;font-size:20px;">
+    <input id="image-grayscale" type="button" value="grayscale">
+    <input id="image-sepia" type="button" value="sepia">
+    <input id="image-saturate" type="button" value="saturate">
+    <input id="image-hue-rotate" type="button" value="hue-rotate">
+    <input id="image-invert" type="button" value="invert">
+    <input id="image-opacity" type="button" value="opacity">
+    <input id="image-brightness" type="button" value="brightness">
+    <input id="image-contrast" type="button" value="contrast">
+    <input id="image-blur" type="button" value="blur">
+    <input id="image-drop-shadow" type="button" value="drop-shadow">
+</div>
+<script type="text/javascript">
+    
+        $("#image-grayscale").click(function(){
+            $("#blur-image2").css("-webkit-filter","grayscale(1)");
+        })
+        $("#image-sepia").click(function(){
+            $("#blur-image2").css("-webkit-filter","sepia(1)");
+        })
+        $("#image-saturate").click(function(){
+            $("#blur-image2").css("-webkit-filter","saturate(0.5)");
+        })
+        $("#image-hue-rotate").click(function(){
+            $("#blur-image2").css("-webkit-filter","hue-rotate(90deg)");
+        })
+        $("#image-invert").click(function(){
+            $("#blur-image2").css("-webkit-filter","invert(1)");
+        })
+        $("#image-opacity").click(function(){
+            $("#blur-image2").css("-webkit-filter","opacity(.5)");
+        })
+        $("#image-brightness").click(function(){
+            $("#blur-image2").css("-webkit-filter","brightness(.5)");
+        })
+        $("#image-contrast").click(function(){
+            $("#blur-image2").css("-webkit-filter","contrast(2)");
+        })
+        $("#image-blur").click(function(){
+            $("#blur-image2").css("-webkit-filter","blur(5px)");
+        })
+        $("#image-drop-shadow").click(function(){
+            $("#blur-image2").css("-webkit-filter","drop-shadow(10px 10px 10px #aaa)");
+        })
+
+</script>
+</body>
+</html>
